@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    box-shadow: 5px 0px 10px black;
+}
+.nav_left img{
+    width: 4rem;
+    height: 4rem;
+    margin: 0.2rem 0.7rem;
+}
+.nav_center{
+    margin-top: 1rem;
+    margin-right: 20rem;
+}
+.nav_center input{
+    border: 0.5px solid rgba(96, 93, 93, 0.719);
+    border-right: none;
+    padding: 0.2rem 0.7rem;
+    padding-top: 0.6rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.nav_center .search{
+    border:1.5px solid  rgba(96, 93, 93, 0.719) ;
+    border-left: none;
+    color: aliceblue;
+    background:rgb(28, 44, 121);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0.2rem 0.7rem;
+    padding-top: 0.6rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.nav_rigth ul{
+display: flex;
+margin-top: 1rem;
+margin-right: 1rem;
+}
+.list_items{
+    list-style: none;
+}
+.list_items a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    color: rgba(61, 56, 56, 0.799);
+    font-weight: bold;
+}
+.list_items a:hover{
+    color: rgb(28, 44, 121);
+}
+.active a{
+    color: rgb(28, 44, 121);
+    text-decoration: underline rgb(28, 44, 121);
+}
+.landing{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landing h1{
+    color: rgb(243, 152, 17);
+    font-size: 3rem;
+}
+.landing h1 span{
+    color: rgb(28, 44, 121);
+}
+.landing p{
+    font-size: 1.3rem;
+    padding-top: 1.5rem;
+}
+.boss{
+    width: 100%;
+
+}
+.boss .h1{
+    text-align: center;
+    font-size: 2.4rem;
+    color: rgb(28, 44, 121);
+    margin: 1.5rem;
+}
+.catagory_body{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+
+}
+.catagory_body label input {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.boss_left_catagory{
+    margin-left: 2.5rem;
+    margin-right: 2rem;
+}
+.catagory_button{
+    background: rgb(28, 44, 121);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boss_left{
+    border-right: 1px solid rgb(85, 64, 64);
+    width: 17%;
+    height: 75vh;
+}
+.boss_body{
+    display: flex;
+}
+.boss_right_card{
+    border: 1px solid black;
+    width: 25%;
+    height: 70vh;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    text-overflow: ellipsis;
+}
+.boss_right_card img {
+    width: 15rem;
+    height: 13rem;
+    margin-top: 0.2rem;
+    border-radius: 5px;
+}
+.boss_right_card #price{
+    padding: 0.1rem;
+    font-size:1.4rem;
+}
+.boss_right{
+    width: 100%;
+    display: flex;
+}
+.boss_right_card:hover{
+    box-shadow: -5px -5px 10px rgb(193, 179, 179), 5px 5px 10px rgb(194, 188, 188);
+    cursor: pointer;
+}
+.boss_right_card button{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+.boss_right_card #buy{
+background: rgb(243, 152, 17);
+}
+.boss_right_card #add{
+    background: rgb(28, 44, 121);
+}
+.nav_center .bars{
+    display: none;
+}
+.footer{
+    width: 100%;
+    background-color: rgb(28, 44, 121);
+    color: rgb(243, 152, 17);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+@media(max-width:1030px){
+    .nav{
+        overflow: hidden;
+        width: 100%;
+    }
+    .nav_center{
+        display: flex;
+        height: 50%;
+        margin-right: 2rem;
+    }
+    .nav_left img{
+        margin-right: 0 1rem;
+    }
+    .nav_center input{
+        padding: 0.1rem 0.2rem;
+        padding-top: 0.3rem;
+        font-size: 1.1rem;
+        width: 70%;
+        text-overflow: ellipsis;
+    }
+    .nav_left img{
+        width: 4rem;
+        height: 4rem;
+        margin: 0.2rem 0.5rem;
+    }
+    .nav_center .search{
+    padding: 0.2rem 0.7rem;
+    padding-top: 0.4rem;
+    font-size: 1.2rem;
+    text-align: center;
+    }
+    .nav_rigth{
+        position: absolute;
+        top: 70px;
+        width: 80%;
+        background: rgb(28, 44, 121);
+        left: -1000px;
+    }
+    .navmenu{
+        position: absolute;
+        top: 70px;
+        width: 50%;
+        background: white;
+        left: 0px;
+        transition: all ease-in 0.5s;
+    }
+    .nav_center .bars{
+        display: block;
+        margin-top: 0.3rem;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+    }
+    .landing{
+        overflow: hidden;
+    }
+    .landing h1{
+        font-size: 2rem;
+    }
+    .landing p{
+        font-size: 1rem;
+    }
+    .boss{
+        overflow: hidden;
+    }
+    .boss .h1{
+        text-align: center;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    .boss_left{
+        position: absolute;
+        border: none;
+        font-size: 1rem;
+        top: 113px;
+        width: 80%;
+        background:rgb(28, 44, 121);
+        padding-top: 2rem;
+        left: -1000px;
+    }
+    .left_active{
+        position: absolute;
+        border: none;
+        font-size: 1rem;
+        top: 151px;
+        width: 50%;
+        background:white;
+        padding-top: 2rem;
+        left: 0;
+        transition: all ease-in 0.5s;
+    }
+    .boss_left_catagory{
+        margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    }
+    .catagory_body label input {
+        margin-right: 0.2rem;
+    }
+    .boss_left_catagory h1{
+        font-size: 1.3rem;
+    }
+    .boss_left_catagory label{
+        display: flex;
+    }
+    .boss_right_card{
+        overflow: hidden;
+        width: 25%;
+        height: 45vh;
+        margin: 2rem;
+    }
+    .boss_right_card img {
+        width: 8rem;
+        height: 6rem;
+    }
+    .boss_right_card button{
+        margin: 0.5rem;
+        padding: 0.2rem 0.5rem;
+        color: white;
+        font-size: 0.6rem;
+        border: none;
+        border-radius: 5px;
+    }
+}
+@media only screen and (max-width:500px) and (min-width:390px) {
+    .boss_right_card{
+        height: 33vh;
+    }
+}
+@media only screen and (max-width:400px) and (min-width:390px) {
+    .boss_right_card{
+        height: 35vh;
+    }
+}
+@media only screen and (max-width:790px) and (min-width:760px) {
+    .boss_right_card{
+        height: 28vh;
+    }
+}
+@media only screen and (max-width:360px) and (min-width:350px) {
+    .boss_right_card{
+        height: 41vh;
+        width: 25%;
+        margin: 1.5rem;
+    }
+}
+@media only screen and (max-width:820px) and (min-width:800px) {
+    .boss_right_card{
+        height: 24vh;
+    }
+}
+@media only screen and (max-width:1024px) and (min-width:1010px) {
+    .boss_right_card{
+        height: 20vh;
+    }
+}
+@media only screen and (max-width:912px) and (min-width:910px) {
+    .boss_right_card{
+        height: 18vh;
+    }
+}
+@media only screen and (max-width:540px) and (min-width:530px) {
+    .boss_right_card{
+        height: 43vh;
+        margin: 1rem;
+    }
+}
